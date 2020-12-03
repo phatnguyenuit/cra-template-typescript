@@ -1,0 +1,33 @@
+{
+  "name": "@phatnguyenuit/cra-template-cool-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phatnguyenuit/cra-template-cool-kit.git"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "cool-kit"
+  ],
+  "author": "PhatNguyen <phatnt.uit@gmail.com> (https://phatnguyenuit.github.io)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/phatnguyenuit/cra-template-cool-kit/issues"
+  },
+  "homepage": "https://github.com/phatnguyenuit/cra-template-cool-kit#readme",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
