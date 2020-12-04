@@ -1,5 +1,11 @@
 # cra-template-typescript
 
+## Using
+
+```bash
+create-react-app <app_name> --template @phatnguyenuit/typescript
+```
+
 ## Features
 
 - [x] Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
