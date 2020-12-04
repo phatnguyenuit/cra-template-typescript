@@ -1,12 +1,13 @@
-# cra-template-cool-kit
+# cra-template-typescript
 
 ## Features
 
 - [x] Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
-- [ ] Configure `eslint` with `redux-saga`, `prettier`
-- [ ] Configure `husky`
-- [ ] Configure `lint-staged`
-- [ ] Configure `prettier`
-- [ ] Add default `jest` test coverage options
-- [ ] Configure sample GitHub actions including test & deploy
-- [ ] Provide sample vscode snippets
+- [x] Configure `eslint` with `prettier`
+- [x] Configure `husky`
+- [x] Configure `lint-staged`
+- [x] Configure `prettier`
+- [x] Configure `commitlint`
+- [x] Add default `jest` test coverage options
+- [x] Configure sample GitHub actions including test & deploy
+- [x] Provide sample vscode snippets

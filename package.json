@@ -1,5 +1,5 @@
 {
-  "name": "@phatnguyenuit/cra-template-cool-kit",
+  "name": "@phatnguyenuit/cra-template-typescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phatnguyenuit/cra-template-cool-kit.git"
+    "url": "git+https://github.com/phatnguyenuit/cra-template-typescript.git"
   },
   "keywords": [
     "react",
@@ -23,9 +23,9 @@
     "node": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/phatnguyenuit/cra-template-cool-kit/issues"
+    "url": "https://github.com/phatnguyenuit/cra-template-typescript/issues"
   },
-  "homepage": "https://github.com/phatnguyenuit/cra-template-cool-kit#readme",
+  "homepage": "https://github.com/phatnguyenuit/cra-template-typescript#readme",
   "files": [
     "template",
     "template.json"

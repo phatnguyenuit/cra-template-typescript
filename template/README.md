@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+![CI/CD](https://github.com/:user/:repository/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/:user/:repository/branch/master/graph/badge.svg?token=:TOKEN)](https://codecov.io/gh/:user/:repository)
+![License](https://img.shields.io/github/license/:user/:repository)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -44,3 +48,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## GitHub Actions
+
+- Learn [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
+
+## ESLint
+
+- Learn [ESLint](https://eslint.org/docs/user-guide/getting-started)
+
+## Commitlint
+
+- Learn [Commitlint](https://commitlint.js.org/#/)

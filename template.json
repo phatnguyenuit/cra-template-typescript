@@ -1,10 +1,67 @@
 {
   "package": {
+    "engines": {
+      "node": ">=10"
+    },
     "dependencies": {
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
+      "@types/node": "^12.0.0",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "@types/jest": "^26.0.15",
+      "typescript": "^4.1.2",
       "web-vitals": "^1.0.1"
+    },
+    "devDependencies": {
+      "@commitlint/cli": "^11.0.0",
+      "@commitlint/config-conventional": "^11.0.0",
+      "commitizen": "^4.2.2",
+      "cz-conventional-changelog": "3.3.0",
+      "eslint-config-prettier": "^6.15.0",
+      "eslint-plugin-prettier": "^3.2.0",
+      "eslint-plugin-redux-saga": "^1.2.1",
+      "husky": "^4.2.5",
+      "lint-staged": "^10.2.11",
+      "prettier": "^2.0.5"
+    },
+    "scripts": {
+      "commit": "git-cz",
+      "lint:fix": "yarn lint --fix",
+      "lint": "eslint src/**/*.{ts,tsx}",
+      "type-check": "tsc --noEmit"
+    },
+    "lint-staged": {
+      "*.{js,jsx,ts,tsx}": ["yarn lint:fix"],
+      "{*.{json,md}}": ["prettier --write"]
+    },
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "pre-commit": "yarn type-check && lint-staged"
+      }
+    },
+    "jest": {
+      "collectCoverageFrom": [
+        "**/*.{ts,tsx}",
+        "!**/node_modules/**",
+        "!**/coverage/**",
+        "!src/serviceWorker.ts"
+      ],
+      "coverageThreshold": {
+        "global": {
+          "branches": 90,
+          "functions": 90,
+          "lines": 90,
+          "statements": 90
+        }
+      }
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
     }
   }
 }
