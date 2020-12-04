@@ -3,7 +3,7 @@
 ## Features
 
 - [x] Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
-- [ ] Configure `eslint`
+- [ ] Configure `eslint` with `redux-saga`, `prettier`
 - [ ] Configure `husky`
 - [ ] Configure `lint-staged`
 - [ ] Configure `prettier`
