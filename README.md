@@ -1,4 +1,5 @@
 # Custom Create React App TypeScript Template
+> Custom Create React App TypeScript Template
 
 [![NPM](https://nodei.co/npm/@phatnguyenuit/cra-template-typescript.png)](https://www.npmjs.com/package/@phatnguyenuit/cra-template-typescript)
 
