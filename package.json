@@ -1,7 +1,7 @@
 {
   "name": "@phatnguyenuit/cra-template-typescript",
   "version": "1.0.3",
-  "description": "",
+  "description": "Custom create react app template with TypeScript and some helpful features",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",

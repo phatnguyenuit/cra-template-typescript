@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Create Release
+    name: Create new release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -38,6 +38,7 @@ jobs:
           draft: false
           prerelease: false
   publish:
+    name: Publish package to NPM
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
