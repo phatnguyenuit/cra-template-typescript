@@ -1,4 +1,5 @@
 # Custom Create React App TypeScript Template
+
 > Custom Create React App TypeScript Template
 
 [![NPM](https://nodei.co/npm/@phatnguyenuit/cra-template-typescript.png)](https://www.npmjs.com/package/@phatnguyenuit/cra-template-typescript)
@@ -25,3 +26,4 @@ create-react-app <app_name> --template @phatnguyenuit/typescript
 - [x] Add default `jest` test coverage options
 - [x] Configure sample GitHub actions including test & deploy
 - [x] Provide sample vscode snippets
+- [ ] Configure `release-it`
