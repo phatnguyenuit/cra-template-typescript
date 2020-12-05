@@ -1,4 +1,4 @@
-name: Create Release
+name: Release
 on:
   push:
     # Sequence of patterns matched against refs/tags
@@ -37,3 +37,16 @@ jobs:
             ${{ steps.step_changelog_id.outputs.changelog }}
           draft: false
           prerelease: false
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Setup .npmrc file to publish to npm
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
+    
+    - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
