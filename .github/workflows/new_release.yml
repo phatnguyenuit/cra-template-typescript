@@ -6,7 +6,7 @@ on:
 
 jobs:
   release:
-    name: Create new release
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -20,12 +20,23 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Release
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn
+      
+      - name: Run release-it
         run: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       # Publish package to NPM
-      - run: npm publish
+      - name: Publish package to NPM
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
