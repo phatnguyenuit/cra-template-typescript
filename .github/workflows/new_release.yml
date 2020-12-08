@@ -32,13 +32,13 @@ jobs:
 
       - name: Run release-it
         run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
+          git config --global user.name $USER_NAME
+          git config --global user.email $USER_EMAIL
           git remote set-url origin https://${GITHUB_TOKEN}@github.com/${REPOSITORY}
           yarn release
         env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          USER_NAME: 'github-actions[bot]'
+          USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
       
