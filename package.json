@@ -2,9 +2,13 @@
   "name": "@phatnguyenuit/cra-template-typescript",
   "version": "1.0.4",
   "description": "Custom create react app template with TypeScript and some helpful features",
-  "main": "index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "commit": "git-cz",
+    "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -44,8 +48,10 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@release-it/conventional-changelog": "^2.0.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.4"
+    "husky": "^4.3.4",
+    "release-it": "^14.2.2"
   }
 }
