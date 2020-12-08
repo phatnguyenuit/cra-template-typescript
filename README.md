@@ -26,4 +26,3 @@ create-react-app <app_name> --template @phatnguyenuit/typescript
 - [x] Add default `jest` test coverage options
 - [x] Configure sample GitHub actions including test & deploy
 - [x] Provide sample vscode snippets
-- [ ] Configure `release-it`
