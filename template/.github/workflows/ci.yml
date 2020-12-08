@@ -1,6 +1,3 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: CI
 
 on:
@@ -10,8 +7,8 @@ on:
     branches: [ master ]
 
 jobs:
-  deployment:
-    name: Run test coverage, upload to Codecov and deploy to GitHub Pages
+  deploy:
+    name: Release and deploy to GitHub Pages
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -20,8 +17,10 @@ jobs:
     steps:
       - name: Check repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup NodeJS ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
@@ -34,7 +33,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies
-        run: yarn --no-progress --non-interactive
+        run: yarn install --no-progress --non-interactive
 
       - name: Run test coverage
         run: yarn test --coverage
@@ -44,14 +43,15 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
-      - name: Deploy to GitHub Pages
+      - name: Release & deploy to GitHub Pages
         run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
+          git config --global user.name $USER_NAME
+          git config --global user.email $USER_EMAIL
+          git remote set-url origin https://${GITHUB_TOKEN}@github.com/${REPOSITORY}
+          yarn release
           yarn deploy -m "${{ github.event.head_commit.message }}"
         env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
-          repository: ${{ github.repository }}
+          USER_NAME: 'github-actions[bot]'
+          USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+          GITHUB_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}

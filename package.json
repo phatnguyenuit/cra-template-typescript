@@ -19,8 +19,7 @@
     "react",
     "create-react-app",
     "template",
-    "typescript",
-    "cool-kit"
+    "typescript"
   ],
   "author": "PhatNguyen <phatnt.uit@gmail.com> (https://phatnguyenuit.github.io)",
   "license": "MIT",
@@ -42,7 +41,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "devDependencies": {

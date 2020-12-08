@@ -31,6 +31,7 @@
       "commit": "git-cz",
       "lint:fix": "yarn lint --fix",
       "lint": "eslint src/**/*.{ts,tsx}",
+      "release": "release-it",
       "type-check": "tsc --noEmit"
     },
     "lint-staged": {
