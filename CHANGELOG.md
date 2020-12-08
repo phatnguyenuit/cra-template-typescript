@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.2...v1.1.3) (2020-12-08)
+
+
+### Reverts
+
+* revert last release-it configuration ([5b28c2b](https://github.com/phatnguyenuit/cra-template-typescript/commit/5b28c2bfc4df7eca87a48b09951694d3c06e5bab))
+
 ### [1.1.2](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.1...v1.1.2) (2020-12-08)
 
 ## [1.1.1](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.0...v1.1.1) (2020-12-08)
