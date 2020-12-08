@@ -1,3 +1,5 @@
+## [1.1.1](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.0...v1.1.1) (2020-12-08)
+
 # [1.1.0](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.0.5...v1.1.0) (2020-12-08)
 
 
