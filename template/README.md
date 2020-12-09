@@ -6,6 +6,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+
+- Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
+- Configure `eslint` with `prettier`
+- Configure [`husky`](https://typicode.github.io/husky/#/)
+- Configure [`lint-staged`](https://github.com/okonet/lint-staged#readme)
+- Configure [`prettier`](https://prettier.io/)
+- Configure [`commitlint`](https://commitlint.js.org/)
+- Configure [`release-it`](https://github.com/release-it/release-it)
+- Add default `jest` test coverage options
+- Configure sample GitHub actions including test, release and deploy
+- Provide sample vscode snippets
+
+## Setup
+
+- Replace `:user` and `:repository` by your own.
+- Navigate to [Codecov](https://codecov.io) login and get `Repository Upload Token` for your repository.
+- Replace `:TOKEN` with your markdown Codecov badge.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -43,25 +62,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run commit`
+
+Commit with conventional commit powered by `@commitlint/cli` CLI
+
 ### `npm run release`
 
-Release version for your project followed by `release-it` CLI
+Release version for your project powered by `release-it` CLI
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
-## GitHub Actions
-
+- You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Learn React, check out the [React documentation](https://reactjs.org/).
 - Learn [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
-
-## ESLint
-
 - Learn [ESLint](https://eslint.org/docs/user-guide/getting-started)
-
-## Commitlint
-
 - Learn [Commitlint](https://commitlint.js.org/#/)
+- Learn [Release-it](https://github.com/release-it/release-it)
