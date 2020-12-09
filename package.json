@@ -1,6 +1,6 @@
 {
   "name": "@phatnguyenuit/cra-template-typescript",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Custom create react app template with TypeScript and some helpful features",
   "private": false,
   "publishConfig": {
