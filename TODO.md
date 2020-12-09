@@ -1,3 +1,4 @@
 # TODO List
 
-Configure `release-it`
+- Write installation
+- ~~Configure `release-it`~~

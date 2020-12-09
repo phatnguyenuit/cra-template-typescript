@@ -23,6 +23,7 @@ create-react-app <app_name> --template @phatnguyenuit/typescript
 - [x] Configure `lint-staged`
 - [x] Configure `prettier`
 - [x] Configure `commitlint`
+- [x] Configure `release-it`
 - [x] Add default `jest` test coverage options
 - [x] Configure sample GitHub actions including test & deploy
 - [x] Provide sample vscode snippets
