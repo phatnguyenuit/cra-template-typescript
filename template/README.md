@@ -25,6 +25,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Replace `:user` and `:repository` by your own.
   - Navigate to [Codecov](https://codecov.io) login and get `Repository Upload Token` for your repository.
   - Replace `:TOKEN` with your markdown Codecov badge.
+- Add repository secrets `DEPLOY_ACCESS_TOKEN` generated from `https://github.com/settings/tokens/new` with the first four checked options of `repo`.
 
 ## Available Scripts
 

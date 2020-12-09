@@ -43,15 +43,26 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
-      - name: Release & deploy to GitHub Pages
+      - name: Release
         run: |
           git config --global user.name $USER_NAME
           git config --global user.email $USER_EMAIL
           git remote set-url origin https://${GITHUB_TOKEN}@github.com/${REPOSITORY}
           yarn release
-          yarn deploy -m "${{ github.event.head_commit.message }}"
         env:
           USER_NAME: 'github-actions[bot]'
           USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
-          GITHUB_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ github.token }} #GITHUB_TOKEN is required
+      
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name $USER_NAME
+          git config --global user.email $USER_EMAIL
+          git remote set-url origin https://${DEPLOY_ACCESS_TOKEN}@github.com/${REPOSITORY}
+          yarn deploy -m "${{ github.event.head_commit.message }}" 
+        env:
+          USER_NAME: 'github-actions[bot]'
+          USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+          DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
           REPOSITORY: ${{ github.repository }}
