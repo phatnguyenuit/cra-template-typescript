@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.8...v1.1.9) (2020-12-09)
+
+
+### Bug Fixes
+
+* fix gh-pages deployment ([2047619](https://github.com/phatnguyenuit/cra-template-typescript/commit/204761929e88a1b2e5a664435ab5583314a2fe2e))
+
 ## [1.1.8](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.7...v1.1.8) (2020-12-09)
 
 ## [1.1.7](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.6...v1.1.7) (2020-12-09)
