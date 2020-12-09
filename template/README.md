@@ -19,11 +19,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Configure sample GitHub actions including test, release and deploy
 - Provide sample vscode snippets
 
-## Setup
+## Configure
 
-- Replace `:user` and `:repository` by your own.
-- Navigate to [Codecov](https://codecov.io) login and get `Repository Upload Token` for your repository.
-- Replace `:TOKEN` with your markdown Codecov badge.
+- Update [`README`](./README.md)
+  - Replace `:user` and `:repository` by your own.
+  - Navigate to [Codecov](https://codecov.io) login and get `Repository Upload Token` for your repository.
+  - Replace `:TOKEN` with your markdown Codecov badge.
 
 ## Available Scripts
 
