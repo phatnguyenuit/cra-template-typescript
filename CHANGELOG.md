@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.11...v1.1.12) (2021-01-10)
+
+
+### Bug Fixes
+
+* add missing scripts ([5efc0cf](https://github.com/phatnguyenuit/cra-template-typescript/commit/5efc0cfdc039ad5af890c96de4d57efb08bef582))
+
 ## [1.1.11](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.10...v1.1.11) (2020-12-09)
 
 ## [1.1.10](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.9...v1.1.10) (2020-12-09)
