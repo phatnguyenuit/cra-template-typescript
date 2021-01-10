@@ -33,7 +33,9 @@
       "lint:fix": "yarn lint --fix",
       "lint": "eslint src/**/*.{ts,tsx}",
       "release": "release-it",
-      "type-check": "tsc --noEmit"
+      "type-check": "tsc --noEmit",
+      "predeploy": "yarn build",
+      "deploy": "gh-page -d build"
     },
     "lint-staged": {
       "*.{js,jsx,ts,tsx}": ["yarn lint:fix"],
