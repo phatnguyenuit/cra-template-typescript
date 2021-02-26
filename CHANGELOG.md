@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.14...v1.2.0) (2021-02-26)
+
+
+### Features
+
+* ignore the 1st commit from Create React App ([22f7d98](https://github.com/phatnguyenuit/cra-template-typescript/commit/22f7d988b336cf6765e31fa80dbfc6a61a137219))
+
 ## [1.1.14](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.13...v1.1.14) (2021-02-09)
 
 ## [1.1.13](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.1.12...v1.1.13) (2021-01-11)
