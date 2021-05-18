@@ -15,12 +15,8 @@
 	"Create React Functional Component": {
 		"prefix": "crfc",
 		"body": [
-			"import { memo } from 'react';",
+			"const ${1:ComponentName}: React.FC = () => <div>Empty</div>;",
 			"",
-			"export const ${1:ComponentName}Component: React.FC = () => <div>Empty</div>;",
-			"",
-			"const $1 = memo(${1:ComponentName}Component);",
-			"$1.displayName = '$1';",
 			"",
 			"export default $1;",
 			""
