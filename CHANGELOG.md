@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.2.2...v1.2.3) (2021-12-04)
+
+
+### Bug Fixes
+
+* fix husky install ([b743365](https://github.com/phatnguyenuit/cra-template-typescript/commit/b74336507d60f1bc1cc7e6df638e6c98e77cf0fd))
+
 ## [1.2.2](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.2.1...v1.2.2) (2021-12-04)
 
 ## [1.2.1](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.2.0...v1.2.1) (2021-05-18)
