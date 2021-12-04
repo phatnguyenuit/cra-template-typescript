@@ -9,7 +9,7 @@
   "scripts": {
     "commit": "git-cz",
     "release": "release-it",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,11 +34,6 @@
     "template",
     "template.json"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -50,7 +45,7 @@
     "@release-it/conventional-changelog": "^2.0.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.4",
+    "husky": "^7.0.0",
     "release-it": "^14.2.2"
   }
 }

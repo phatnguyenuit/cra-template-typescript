@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Ignore hook in case running in CI environment
+[ -n "$CI" ] && exit 0
+npx --no-install commitlint --edit $1
