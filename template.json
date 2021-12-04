@@ -35,7 +35,8 @@
       "release": "release-it",
       "type-check": "tsc --noEmit",
       "predeploy": "yarn build",
-      "deploy": "gh-pages -d build"
+      "deploy": "gh-pages -d build",
+      "prepare": "husky install"
     },
     "lint-staged": {
       "*.{js,jsx,ts,tsx}": ["yarn lint:fix"],
