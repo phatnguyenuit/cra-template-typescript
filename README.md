@@ -16,7 +16,7 @@ $ create-react-app <app_name> --template @phatnguyenuit/typescript
 ## Features
 
 - Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
-- Configure `eslint` with `prettier`
+- Configure [`eslint`](https://eslint.org/) with [`prettier`](https://prettier.io/)
 - Configure [`husky`](https://typicode.github.io/husky/#/)
 - Configure [`lint-staged`](https://github.com/okonet/lint-staged#readme)
 - Configure [`prettier`](https://prettier.io/)
