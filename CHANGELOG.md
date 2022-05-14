@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.2.3...v1.3.0) (2022-05-14)
+
+
+### Features
+
+* upgrade react to v18 ([5f4154d](https://github.com/phatnguyenuit/cra-template-typescript/commit/5f4154de9775d25c35f68c90f81414ed47343f66))
+
 ## [1.2.3](https://github.com/phatnguyenuit/cra-template-typescript/compare/v1.2.2...v1.2.3) (2021-12-04)
 
 
